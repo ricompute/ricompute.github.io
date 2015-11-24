@@ -1,1 +1,55 @@
-Hello world
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Richard C. Lindsey</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#front-page").css({"height":$(window).height()+"px"});
+
+        $(".page-link").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800,'swing');
+        });
+        
+        $("#nav-bar").hide();
+        $(window).on("scroll", function(evt){
+          if ($(window).scrollTop() > $(window).height()) {
+            $("#nav-bar").show(800);
+          } else {
+            $("#nav-bar").hide(800);
+          };
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div style="position: fixed; top: 0;">
+        <div id="nav-bar"><a href="#top" class="page-link">Home</a> | <a href="#about" class="page-link">About</a> | <a href="#cv" class="page-link">CV</a> | <a href="#resources" class="page-link">Resources</a></div>
+      </div>
+      <div id="front-page"><a id="top"></a>
+        <div id="front-content">
+          <div class="header">Richard C. Lindsey</div>
+          <div id="contact">richard.c.lindsey[at]ricompute.com | http://ricompute.com</div>
+          <p><a class="page-link" href="#about">About</a> | <a class="page-link" href="#cv">CV</a> | <a class="page-link" href="#resources">Resources</a></p>
+        </div>
+      </div>
+      <a id="about"><div class="title-1">About</div></a>
+      <div>
+        <div id="about-photo"><img src="https://avatars3.githubusercontent.com/u/11775320?v=3&s=460" /></div>
+        <p id="about-content">I am an MD/PhD student at Loma Linda University. In 2012, I graduated from Biola University with a degree in biochemistry, and I am a perpetual member of Biola’s <a href='http://torreyhonors.com'>Torrey Honors Institute</a>, a great books program taught in the Socratic style. I intend to use my education from both Biola and LLU to pursue a career in medical research with an eye toward understanding and eliminating health disparities. Moreover, I am interested in Christian theology and philosophy of science, and I want to contribute to both science and the way people perceive and relate to science. In an effort “to glorify God and to enjoy him forever” (<em><a href='http://opc.org/sc.html'>Westminster Shorter Catechism</a></em>), I want to ensure that Man's conquest of Nature does not become Nature's conquest of Man (CS Lewis, <em><a href='http://www.amazon.com/Abolition-Man-C-S-Lewis/dp/0060652942/ref=sr_1_1?ie=UTF8&qid=1448391266&sr=8-1&keywords=the+abolition+of+man'>The Abolition of Man</a></em>).</p>
+      </div>
+      <a id="cv"><div class="title-1">CV</div></a>
+      <div id="cv-content"></div>
+      <a id="resources"><div class="title-1">Resources</div></a>
+      <div id="resources-content"></div>
+    </div>
+  </body>
+</html>
