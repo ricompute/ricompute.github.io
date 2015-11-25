@@ -1,0 +1,49 @@
+.cv-section {
+	font: 16px Fira Sans, sans-serif;
+	margin: 20px;
+}
+
+.cv-place {
+	font-weight: 300;
+	display: inline;
+}
+
+.cv-sep {
+	font-weight: 300;
+	display: inline;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.cv-time {
+	font-weight: 400;
+	display: inline;
+}
+
+.cv-title {
+	font-weight: 400;
+}
+
+.cv-description {
+	font-weight: 300;
+}
+
+.cv-publication {
+	font: 16px Fira Sans, sans-serif;
+	font-weight: 300;
+	margin: 20px;
+}
+
+.cv-publication a {
+	text-decoration: none;
+	color: #000;
+}
+
+.cv-publication a:hover {
+	text-decoration: underline;
+}
+
+.award {
+	font-weight: 400;
+	display: inline;
+}

@@ -5,8 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
     <title>Richard C. Lindsey</title>
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/cv.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script>
@@ -15,15 +17,15 @@
 
         $(".page-link").click(function(event){
           event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 800,'swing');
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 300,'swing');
         });
         
         $("#nav-bar").hide();
         $(window).on("scroll", function(evt){
           if ($(window).scrollTop() > $(window).height()) {
-            $("#nav-bar").show(800);
+            $("#nav-bar").show(300);
           } else {
-            $("#nav-bar").hide(800);
+            $("#nav-bar").hide(300);
           };
         });
       });
@@ -46,10 +48,231 @@
         <div id="about-photo"><img src="https://avatars3.githubusercontent.com/u/11775320?v=3&s=460" /></div>
         <p id="about-content">I am an MD/PhD student at Loma Linda University. In 2012, I graduated from Biola University with a degree in biochemistry, and I am a perpetual member of Biola’s <a href='http://torreyhonors.com'>Torrey Honors Institute</a>, a great books program taught in the Socratic style. I intend to use my education from both Biola and LLU to pursue a career in medical research with an eye toward understanding and eliminating health disparities. Moreover, I am interested in Christian theology and philosophy of science, and I want to contribute to both science and the way people perceive and relate to science. In an effort “to glorify God and to enjoy him forever” (<em><a href='http://opc.org/sc.html'>Westminster Shorter Catechism</a></em>), I want to ensure that Man's conquest of Nature does not become Nature's conquest of Man (CS Lewis, <em><a href='http://www.amazon.com/Abolition-Man-C-S-Lewis/dp/0060652942/ref=sr_1_1?ie=UTF8&qid=1448391266&sr=8-1&keywords=the+abolition+of+man'>The Abolition of Man</a></em>).</p>
       </div>
-      <a id="cv"><div class="title-1">CV</div></a>
-      <div id="cv-content"></div>
+      <a id="cv"><div class="title-1">Curriculum Vitae</div></a>
+      <div id="cv-content">
+        <div class="title-2">Education</div>
+          <div id="LLU" class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2012 - present</div>
+            <div class="cv-title">MD/PhD Student</div>
+            <div class="cv-description">Currently enrolled.</div>
+          </div>
+          <div id="Biola" class="cv-section">
+            <div class="cv-place">Biola University, La Mirada, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2012</div>
+            <div class="cv-title">Bachelor of Science in Biochemistry</div>
+            <div class="cv-description"><em>Summa cum laude</em><br />Minor: Mathematics<br />Perpetual Member, Torrey Honors Institute</div>
+          </div>
+        <div class="title-2">Research &amp; Work Experience</div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June 2014 - present</div>
+            <div class="cv-title">Doctoral Research</div>
+            <div class="cv-description">Musculoskeletal Disease Center, VA Loma Linda Healthcare System,<br />Center for Health Disparities and Molecular Medicine and Division of Biochemistry, Department of Basic Sciences<br />Mentor: Subburaman Mohan, PhD</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June - August 2013</div>
+            <div class="cv-title">Medical Training Program</div>
+            <div class="cv-description">Research through the LLU Center for Health Disparities and Molecular Medicine culminating in an abstract and poster session.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June - August 2012</div>
+            <div class="cv-title">Medical Training Program</div>
+            <div class="cv-description">Research through the LLU Center for Health Disparities and Molecular Medicine culminating in an abstract and poster session.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Biola University, La Mirada, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2011 - 2012</div>
+            <div class="cv-title">Directed Research</div>
+            <div class="cv-description">Aging research on <em>C. elegans</em> under the direction of Matt E. Cruzen, PhD.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June - August 2011</div>
+            <div class="cv-title">Undergraduate Training Program</div>
+            <div class="cv-description">Research through the LLU Center for Health Disparities and Molecular Medicine culminating in an abstract and poster session.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June - August 2010</div>
+            <div class="cv-title">Undergraduate Training Program</div>
+            <div class="cv-description">Research through the LLU Center for Health Disparities and Molecular Medicine culminating in an abstract and poster session.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Biola University, La Mirada, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2009 - 2012</div>
+            <div class="cv-title">General Chemistry Tutor and Grader</div>
+            <div class="cv-description">Tutoring and grading for undergraduate General Chemistry lecture and lab classes under the direction of Brent Ridley, PhD, and Mark Pichaj, MS.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Molina Healthcare, Inc., Long Beach, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">June - August 2009</div>
+            <div class="cv-title">Internship and Clinical Shadowing</div>
+            <div class="cv-description">Statistical public health and health disparities research in the Department of Research and Innovation and shadowing family practice physicians.</div>
+          </div>
+        <div class="title-2">Publications</div>
+          <div class="cv-section">REVIEW ARTICLES</div>
+          <div class="cv-publication">
+            <a href="http://www.ncbi.nlm.nih.gov/pubmed/26408965"><span style="font-weight: 400">Lindsey, Richard C.</span>, and Subburaman Mohan. “Skeletal Effects of Growth Hormone and Insulin-like Growth Factor-I Therapy.” Molecular and Cellular Endocrinology, September 23, 2015. doi:10.1016/j.mce.2015.09.017.</a>
+          </div>
+        <div class="title-2">Presentations</div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">October 2015</div>
+            <div class="cv-title">18<sup>th</sup> Annual Basic Sciences Research Symposium</div>
+            <div class="cv-description">Poster: "Thyroid Hormone Induces Browning of Bone Marrow Adipose Tissue via Activation of TR&beta; Signaling"<br />Lindsey, RC; Pourteymoor, S; Alarcon, C; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Seattle, WA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">October 2015</div>
+            <div class="cv-title">American Society for Bone and Mineral Research Annual Meeting</div>
+            <div class="cv-description">Poster: "Thyroid Hormone Induces Browning of Bone Marrow Adipose Tissue via Activation of TR&beta; Signaling"<br />Lindsey, RC; Pourteymoor, S; Alarcon, C; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2015</div>
+            <div class="cv-title">15<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Thyroid Hormone Induces Browning of Bone Marrow Adipose Tissue via Activation of TR&beta; Signaling"<br />Lindsey, RC; Pourteymoor, S; Alarcon, C; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">San Diego, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">March 2015</div>
+            <div class="cv-title">ENDO 2015 (Endocrine Society Annual Meeting)</div>
+            <div class="cv-description">Poster: "Thyroid Hormone Regulation of Bone Marrow Adipose Tissue"<br />Lindsey, RC; Abreu, CM; Cheng, A; Pourteymoor, S; Alarcon, C; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2014</div>
+            <div class="cv-title">14<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Regulation of Production and Actions of Claudin-12 in Osteoblasts"<br />Lindsey, RC; Alshbool, FZ; Pourteymoor, S; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2013</div>
+            <div class="cv-title">13<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Molecular Pathway for Vitamin C Regulation of Osteoblast Differentiation"<br />Lindsey, RC; Pourteymoor, S; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2012</div>
+            <div class="cv-title">12<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Molecular Pathway for Thyroid Hormone Regulation of Chondrocyte Differentiation"<br />Lindsey, RC; Pourteymoor, S; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2011</div>
+            <div class="cv-title">11<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Molecular Pathway for Thyroid Hormone Regulation of Chondrocyte Differentiation"<br />Lindsey, RC; Pourteymoor, S; Xing, W; and Mohan, S.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University School of Medicine, Loma Linda, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">August 2010</div>
+            <div class="cv-title">10<sup>th</sup> Annual Health Disparities Symposium</div>
+            <div class="cv-description">Poster: "Vitamin C and BMP-2 Signaling Pathways Interact to Regulate Osteoblast Differentiation"<br />Lindsey, RC; Linares, GR; and Mohan, S.</div>
+          </div>
+        <div class="title-2">Awards</span></div>
+          <div class="cv-section">
+            <div class="award">Outstanding Abstract/Featured Poster Award, Endocrine Society</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2015</div>
+          </div>
+          <div class="cv-section">
+            <div class="award">Dean's Merit Award, Loma Linda University School of Medicine</div><div class="cv-sep">|</div><div class="cv-time">2014 - present</div>
+          </div>
+          <div class="cv-section">
+           <div class="award">Epsilon Kappa Epsilon, Biola University Honor Society</div>
+           <div class="cv-sep">|</div>
+           <div class="cv-time">2012</div>
+          </div>
+          <div class="cv-section">
+            <div class="award">Who's Who Among Students in American Universities and Colleges</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2011</div>
+          </div>
+          <div class="cv-section">
+            <div class="award">Dean's List, Biola University</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2008 - 2012</div>
+          </div>
+          <div class="cv-section">
+            <div class="award">Science Department Scholarship, Biola University</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2008 - 2012</div>
+          </div>
+          <div class="cv-section">
+           <div class="award">E.F. "Dinty" Mohr Beach Cities Masonic Lodge &#35;753 Scholarship</div>
+           <div class="cv-sep">|</div>
+           <div class="cv-time">2008 - 2012</div>
+          </div>
+          <div class="cv-section">
+            <div class="award">National Merit Scholar</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2008</div>
+          </div>
+        <div class="title-2">Service &amp; Extracurricular Activities</div>
+          <div class="cv-section">
+            <div class="cv-place">Sovereign Grace Orthodox Presbyterian Church, Redlands, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2015 - present</div>
+            <div class="cv-title">Pastoral Search Committee</div>
+            <div class="cv-description">Evaluate applicants for the position of Senior Pastor.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Biola University, La Mirada, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2012 - present</div>
+            <div class="cv-title">Pre-Med Night</div>
+            <div class="cv-description">Yearly presentation to the Biola Health Careers Club to educate undergraduate students about applications, medical school, and career options in medicine.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Loma Linda University Community-Academic Partners in Service, San Bernardino, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2012 - 2015</div>
+            <div class="cv-title">Community Kids Connection Tutoring</div>
+            <div class="cv-description">Weekly after-school tutoring for elementary through high school students from underserved areas of San Bernardino.</div>
+          </div>
+          <div class="cv-section">
+            <div class="cv-place">Biola University, La Mirada, CA</div>
+            <div class="cv-sep">|</div>
+            <div class="cv-time">2008 - 2012</div>
+            <div class="cv-title">Biola Health Careers Club</div>
+            <div class="cv-description">Educational service club for pre-health professions students.<br />Officer, Fall 2010; Vice President, Spring 2011; President, Fall 2011 - Spring 2012</div>
+          </div>
+        <div class="title-2">References</div>
+          <div class="cv-section">
+            <div class="cv-title">Available upon request.</div>
+          </div>
+      </div>
       <a id="resources"><div class="title-1">Resources</div></a>
-      <div id="resources-content"></div>
+      <div id="resources-content">
+        <ul>
+          <li>Facebook: <a href="https://www.facebook.com/ricompute">Rick Lindsey</a></li>
+          <li>Twitter: <a href="https://twitter/ricompute">@ricompute</a></li>
+          <li>GitHub: <a href="https://github.com/ricompute">@ricompute</a></li>
+          <li>Personal blog (co-authored with <a href="https://twitter.com/sonsofpaul">William Sprague</a>): <a href="http://gettinglegs.com">Getting Legs</a> (<a href="https://twitter.com/gettinglegs">@GettingLegs</a>)</li>
+        <ul>
+      </div>
     </div>
   </body>
 </html>

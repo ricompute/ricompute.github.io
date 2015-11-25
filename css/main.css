@@ -1,11 +1,12 @@
 #main {
   width: 960px;
   margin: 0 auto 0 auto;
+  font-family: Fira Sans, sans-serif;
 }
 #nav-bar {
   position: relative;
   margin-left: 700px;
-  font: 11px Segoe UI;
+  font: 11px Fira Sans;
   background-color: #eee;
   color: #888;
   padding: 5px;
@@ -19,7 +20,7 @@
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  font-family: Segoe UI;
+  font-family: Fira Sans;
 }
 #front-content a, #nav-bar a {
   color: #000;
@@ -29,23 +30,25 @@
   text-decoration: underline;
 }
 .header {
-  font-size: 54px;
-  font-family: Georgia;
+  font-size: 75px;
+  font-family: Trebuchet MS, sans-serif;
   margin: auto;
 }
 #contact {
-  font-size: 11px;
-  font-family: Segoe UI;
+  font-size: 14px;
+  font-family: Fira Sans, sans-serif;
 }
 .title-1 {
   font-size: 60px;
-  font-family: Segoe UI Light;
+  font-family: Fira Sans, sans-serif;
+  font-weight: 400;
   margin-top: 24px;
   text-align: center;
 }
 .title-2 {
   font-size: 28px;
-  font-family: Impact;
+  font-family: Fira Sans, sans-serif;
+  font-weight: 400;
   color: #666;
   margin-top: 18px;
 }
@@ -62,7 +65,7 @@
   border-bottom: 1px solid #888;
 }
 .instance {
-  font-family: Segoe UI;
+  font-family: Fira Sans, sans-serif;
   margin: 0 0 10px 0;
 }
 .image {
@@ -93,7 +96,7 @@
   color: #888;
 }
 #about-content {
-  font-family: Segoe UI;
+  font-family: Fira Sans, sans-serif;
   /*text-indent: 20px;*/
   display: inline-block;
   width: 690px;
@@ -101,7 +104,6 @@
   margin-left: 20px;
 }
 #about-photo {
-  margin-top: 40px;
   display: inline-block;
   width: 240px;
   vertical-align: top;
@@ -110,12 +112,12 @@
   width: 240px;
   height: 240px;
 }
-.resume-highlight {
+.cv-highlight {
   margin-top: 20px;
-  font-family: Segoe UI Bold;
+  font-family: Fira Sans, sans-serif;
   font-weight: 900;
 }
-.resume-placetime {
+.cv-placetime {
   margin-left: 15px;
   font-size: 11px;
   color: #fff;
@@ -124,15 +126,15 @@
   border-radius: 2px;
 }
 .ui-dialog-title {
-  font: 12px Segoe UI;
+  font: 12px Fira Sans, sans-serif;
   text-overflow: clip !important;
   white-space: normal !important;
   overflow: visible !important;
 }
-#resume-content ul {
+#cv-content ul {
   margin: 7px 0 20px 0;
 }
-#resume-content li {
+#cv-content li {
   font-size: 14px;
   list-style-type: circle;
 }
