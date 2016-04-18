@@ -1,3 +1,6 @@
+body {
+  background-color: #e6ffe6;
+}
 #main {
   width: 960px;
   margin: 0 auto 0 auto;
@@ -45,8 +48,19 @@
   margin-top: 24px;
   text-align: center;
 }
+.title-1 a {
+  text-decoration: none;
+  color: #000;
+}
 .title-2 {
   font-size: 28px;
+  font-family: Fira Sans, sans-serif;
+  font-weight: 400;
+  color: #666;
+  margin-top: 18px;
+}
+.title-3 {
+  font-size: 20px;
   font-family: Fira Sans, sans-serif;
   font-weight: 400;
   color: #666;
@@ -133,6 +147,9 @@
 }
 #cv-content ul {
   margin: 7px 0 20px 0;
+}
+#cv-pdf {
+  text-align: center;
 }
 #cv-content li {
   font-size: 14px;
